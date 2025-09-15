@@ -19,10 +19,10 @@
             </a>
             <nav class="nav" aria-label="Main navigation">      
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">NEWSLETTER</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">COMMUNITY</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">SHOP</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">CONTACT US</a></li>
+                    <li class="nav__item"><a class="nav__link is-disabled" href="#" aria-disabled="true" tabindex="-1">NEWSLETTER</a></li>
+                    <li class="nav__item"><a class="nav__link is-disabled" href="#" aria-disabled="true" tabindex="-1">COMMUNITY</a></li>
+                    <li class="nav__item"><a class="nav__link is-disabled" href="#" aria-disabled="true" tabindex="-1" >SHOP</a></li>
+                    <li class="nav__item"><a class="nav__link is-disabled" href="#" aria-disabled="true" tabindex="-1">CONTACT US</a></li>
                 </ul>     
             </nav>
             </div>
@@ -52,34 +52,32 @@
                 </article>
                
                 <ul class="tabs">
-                    <li class="tabs__item"><a class="tabs__link tabs__link--active" href="#">Pizza</a></li>
-                    <li class="tabs__item"><a class="tabs__link" href="#">Burger</a></li>
-                    <li class="tabs__item"><a class="tabs__link"  href="#">Sandwich</a></li>
-                    <li class="tabs__item"><a class="tabs__link" href="#">Pasta</a></li>
+                    <li class="tabs__item"><a class="tabs__link tabs__link--active" href="#" aria-disabled="true" aria-current="page" >Pizza</a></li>
+                    <li class="tabs__item"><a class="tabs__link" href="#" aria-disabled="true">Burger</a></li>
+                    <li class="tabs__item"><a class="tabs__link"  href="#" aria-disabled="true">Sandwich</a></li>
+                    <li class="tabs__item"><a class="tabs__link" href="#"aria-disabled="true" >Pasta</a></li>
                 </ul>
-                <div class="steps__content">
-                        <div class="step__item">
-                            <p class="step step--one">1</p>
-                            <div class="step__text" id="more">
-                                <h3>CREATE IT</h3>
-                                <p>Choose from a topping to create your own pizza</p>
-                            </div>                
-                        </div>
-                        <div class="step__item">
-                            <p class="step step--two">2</p>
-                            <div class="step__text">
-                                <h3>NAME IT</h3>
-                                <p>Name the pizza after yourself</p>
-                            </div>                
-                        </div>
-                        <div class="step__item">
-                            <p class="step step--three">3</p>
-                            <div class="step__text">
-                                <h3>FAME IT</h3>
-                                <p>Share your pizza on social networks</p>
-                            </div>                
-                        </div>
-                    </div>
+           <ol class="steps__content">
+  <li class="step__item">
+    <img class="step__icon" src="img/icon01.png" alt="">
+    <div class="step__num">1</div>
+    <h3 class="step__title">Create it</h3>
+    <p class="step__desc">Choose from a topping to create your own pizza</p>
+  </li>
+  <li class="step__item">
+    <img class="step__icon" src="img/icon02.png" alt="">
+    <div class="step__num">2</div>
+    <h3 class="step__title">Name it</h3>
+    <p class="step__desc">Name the pizza after yourself</p>
+  </li>
+  <li class="step__item">
+    <img class="step__icon" src="img/icon03.png" alt="">
+    <div class="step__num">3</div>
+    <h3 class="step__title">Fame it</h3>
+    <p class="step__desc">Share your pizza on social networks</p>
+  </li>
+</ol>
+
                     </div>
                     <div class="section__foot">
                         <a href="#" class="btn btn--ghost">Create your legend</a>
