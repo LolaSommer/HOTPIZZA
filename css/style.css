@@ -4,7 +4,7 @@
     --red: #ee252d;
     --dark-gray: #494949;
     --light-gray: #eaeaea;
-    --gray: #959595;
+    --gray: #6b6b6b;
     --black: #282828;
     --white: #ffffff;
     --text-xs: 0.75rem;   /* 12px */
@@ -168,6 +168,14 @@ padding: 36px 0 40px 0;
     -webkit-mask: url(../img/bg.png) no-repeat center / 100% 100%;
     mask:url(../img/bg.png) no-repeat center / 100% 100%;
 }
+@supports not (mask: url(#) no-repeat) {
+  .btn--ghost {
+    -webkit-mask: none;
+    mask: none;
+    background: #e5232a url(../img/bg.png) no-repeat center / contain;
+    border-radius: 9999px;
+  }
+}
   
   .btn--ghost::before {
   content: "";
@@ -179,6 +187,7 @@ padding: 36px 0 40px 0;
   filter: drop-shadow(0 12px 20px rgba(0,0,0,.2));
   z-index: -1;
   pointer-events: none;
+  filter:none;
 }
 
 .btn--ghost:focus-visible {
@@ -309,16 +318,6 @@ padding-bottom: 18px;
   height: 1px;
   background: var(--light-gray);
 }
-.step__text h3 {
-  font-size: 1.75rem;
-  font-weight: var(--font-bold);
-  margin: 0 0 0.5rem;
-}
-.step__text p {
-  font-size: var(--text-lg);
-  color: var(--black);
-  margin: 0;
-}
 
 .section__foot{
     text-align: center;
@@ -380,7 +379,11 @@ padding-bottom: 18px;
     .tabs__item {
         padding: 0 10px;
     }
+     .steps__content {
+    flex-direction: column;
+  }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
