@@ -1,14 +1,18 @@
-HOTPIZZA Website
+🍕 HotPizza Website (Archived)
 
-Training project: pizza delivery website.
-Hand-coded, responsive, with grids and cards.
+Early training project — static pizza delivery website built from scratch with HTML5, CSS3, and BEM methodology.
+My first experience combining Flexbox and Grid layouts for responsive design.
 
-Features:
+🔹 Features
 
 Homepage with pizza menu
 
-Product cards
+Product cards and pricing layout
 
-Contacts section and footer
+Contacts and footer section
 
-Tech stack: HTML5, CSS3 (Flexbox, Grid), BEM methodology.
+🧰 Tech stack
+
+HTML5, CSS3 (Flexbox, Grid), BEM
+
+🕓 Archived in November 2025 — preserved as part of my early front-end learning history.
